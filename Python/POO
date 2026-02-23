@@ -1,0 +1,315 @@
+#class Vendedor:
+#    def __init__(self, nome):
+#        self.nome = nome 
+#        self.vendas = 0
+#    
+#    def vendeu(self, vendas):
+#        self.vendas = vendas
+#
+#    def bateu_meta(self, meta):
+#        if self.vendas > meta:
+#            print(self.nome, "bateu meta")
+#        else:
+#            print(self.nome, "Nao bateu meta")
+#
+#vendedor1 = Vendedor("henrique")
+#vendedor1.vendeu(1600)
+#vendedor1.bateu_meta(890)
+#
+#vendedor2 = Vendedor("henriq")
+#vendedor2.vendeu(300)
+#vendedor2.bateu_meta(600)
+
+
+#class ControleRemoto:
+#    def __init__(self, cor, altura, profundidade, largura):
+#        self.cor = cor
+#        self.altura = altura
+#        self.profundidade = profundidade
+#        self.largura =largura
+#
+#    def passar_canal(self, botao):
+#        if botao == "+":
+#            print("Aumentar Canal")
+#        elif botao == "-":
+#            print("Diminuir canal")
+#
+#controle_remoto = ControleRemoto("cinza", "10cm", "2cm", "2cm")
+#print(controle_remoto.altura)
+#controle_remoto.passar_canal("+")
+#
+#controle_remoto2 = ControleRemoto("preto", "10cm", "2cm", "2cm")
+#print(controle_remoto2.altura)
+#controle_remoto.passar_canal("-")
+
+
+#class Cliente:
+#    def __init__(self, nome, email, plano):
+#        self.nome = nome
+#        self.email = email
+#        self.lista_planos = ["basic", "premium"]
+#        if plano in self.lista_planos:
+#            self.plano = plano
+#        else:
+#            print("Plano inválido")
+#
+#    def mudar_plano(self, novo_plano):
+#        if novo_plano in self.lista_planos:
+#            self.plano = novo_plano
+#        else:
+#            print("plano invalido")
+#
+#
+#    def ver_filme(self, filme, plano_filme):
+#        if self.plano == plano_filme:
+#            print(f"Ver filme {filme}")
+#        elif self.plano == "premium":
+#            print(f"Ver filme {filme}")
+#        elif self.plano == "basic" and plano_filme == "premium":
+#            print("Faça upgarde de plano para ver esse filme")
+#        else:
+#            print("Plano inválido")
+#
+#
+#cliente = Cliente("Henrique", "henriques@gmail.com", "basic")
+#print(cliente.plano)
+#cliente.ver_filme("Harry potter", "premium")
+
+#class Pessoa:
+#    def __init__(self, nome, idade, endereco):
+#        self.nome = nome
+#        self.idade = idade
+#        self.endereco = endereco
+#
+#    def mostrar_endereco(self):
+#        print(f"O endereço de {self.nome} é {self.endereco}")
+#
+#    def mudar_endereco(self, novo_endereco):
+#        self.endereco =novo_endereco
+#
+#henrique = pessoa("henrique", 16, "rua kassawara")
+#henrique.mostrar_endereco()
+#henrique.mudar_endereco("rua jose lopes peres")
+#henrique.mostrar_endereco()
+
+#class Aluno:
+#    def __init__(self, nome, numero, curso):
+#        self.nome = nome
+#        self.numero = numero
+#        self.curso = curso
+#    
+#    def mostrar_curso(self):
+#        print(f"O curso de {self.nome} é {self.curso}")
+#
+#    def mudar_curso(self, novo_curso):
+#        self.curso = novo_curso
+#
+#henrique = aluno("Henrique", 3040372, "Administraçao")
+#henrique.mostrar_curso()
+#henrique.mudar_curso("Informatica")
+#henrique.mostrar_curso()
+#print(henrique.numero)
+
+#class AlunosAdm:
+#    def __init__(self, nome, nota1, nota2, nota3):
+#        self.nome = nome
+#        self.nota1 = nota1
+#        self.nota2 = nota2
+#        self.nota3 = nota3
+#
+#    def mostrar_nome(self):
+#        print(self.nome)
+#
+#    def media(self):
+#        media = (self.nota1 + self.nota2 + self.nota3) / 3
+#        print(f"A media de notas foi {media:.2f}")
+#
+#lista_medias = []
+#for i in range(3):
+#    nome = input("Digite seu nome")
+#    nota1 = input("Digite sua nota1:")
+#    nota2 = input("Digite sua nota2:")
+#    nota3 = input("Digite sua nota3:")
+#    aluno = AlunosAdm(nome, nota1, nota2, nota3)
+#    lista_medias.append(aluno)
+################INCOMPLETO###################
+
+#class Horario:
+#    def __init__(self, hora, minuto, segundo):
+#        self.hora = hora
+#        self.minuto = minuto
+#        self.segundo = segundo
+#    
+#    def converter(self):
+#        total_segundo = self.hora * 3600
+#        total_segundo += self.minuto * 60
+#        total_segundo += self.segundo
+#        print(f"O total de segundos desse horario é {total_segundo}")
+#
+#    def diferenca(self, outro_hora):
+#        total_segundo1 = self.hora*3600 + self.minuto*60 + self.segundo
+#        total_segundo2 = outro_hora.hora*3600 + outro_hora.minuto*60 + outro_hora.segundo
+#        diferenca = total_segundo1 - total_segundo2
+#        diferenca = abs(diferenca)
+#        print(f"A diferenca de horarios é {diferenca}")
+#
+#hora_agora = Horario(6, 43, 20)
+#outra_hora = Horario(8, 30, 40)
+#hora_agora.diferenca(outra_hora)
+
+#class Carro:
+#    def __init__(self, marca, ano, preco):
+#        self.marca = marca
+#        self.ano = ano
+#        self.preco = preco
+#    
+#    def mostrar_preco(self):
+#        print(f"O preço é {self.preco}")
+#
+#    def mostrar_info(self):
+#        print(f"O carro é da marca {self.marca}, do ano {self.ano} e custa {self.preco}")
+#
+#    def verificar(self, valor):
+#        if self.preco < valor:
+#            self.mostrar_info()
+#        else:
+#            print("O carro é mais caro que o esperado")
+#
+#for i in range(3):
+#    marca = input("Qual a marca do carro:")
+#    ano = input("Digite qual o ano do carro:")
+#    preco = float(input("Digite o preco do carro:"))
+#    carro = Carro(marca, ano, preco)
+#    carro.verificar(20000)
+
+#conta1 = input("Digite o nome de sua conta:")
+#saldo_inicial = input("Digite o valor inicial de sua conta:")
+#saldo_inicial = saldo_inicial.replace("R$", "").replace(".","").replace(",", ".")
+#saldo_inicial = float(saldo_inicial)
+#
+#class ContaBancaria:
+#    def __init__(self, titular, saldo):
+#        self.titular = titular 
+#        self.saldo = saldo
+#    
+#    def depositar(self, deposito):
+#        self.saldo = self.saldo + deposito
+#        print(f"Seu saldo atual é {self.saldo}")
+#
+#    def sacar(self, saque):
+#        if self.saldo > saque:
+#            self.saldo = self.saldo - saque
+#            print(f"Seu saldo atual é {self.saldo}")
+#
+#        else:
+#            print(f"voce nao pode sacar essa quantia pois ficará negativado")
+#
+#minha_conta = ContaBancaria(conta1, saldo_inicial)
+#
+#while True:
+#    acao = input("Se quiser depositar digite 1, se quiser sacar digite 2, e se quer  encerrar suas acoes em sua conta digite 3")
+#    if acao == "1":
+#        deposito = input("Digite o valor que deseja depositar:")
+#        deposito = deposito.replace("R$", "").replace(".","").replace(",", ".")
+#        deposito = float(deposito)
+#        minha_conta.depositar(deposito)
+#    elif acao == "2":
+#        saque = input("Digite o valor que deseja sacar:")
+#        saque = saque.replace("R$", "").replace(".","").replace(",", ".")
+#        saque = float(saque)
+#        minha_conta.sacar(saque)
+#    elif acao == "3":
+#        print("Ações encerradas")
+#        break
+#    else:
+#        print("Digite uma acao valida")
+
+#class String:
+#    def get(self):
+#        self.string = ""
+#
+#    def get(self):
+#        self.string = input("Digite o texto")
+#
+#    def mostrar(self):
+#        print(self.string.upper())
+#
+#meu_texto = String()
+#meu_texto.get()
+#meu_texto.mostrar()
+
+#class Produto:
+#    def __init__(self, nome, preco):
+#        self.nome = nome
+#        self.preco = preco
+#
+#lista_produtos = []
+#for i in range(3):
+#    produto = input("Digite o nome do produto:")
+#    preco = float(input("Digite o preco do produto:"))
+#    meu_produto = Produto(produto, preco)
+#    lista_produtos.append(meu_produto)
+#
+#total = 0
+#for produto in lista_produtos:
+#    total += produto.preco
+#print(total)
+
+#class Veiculo:
+#    def __init__(self, marca, velocidade):
+#        self.velocidade = velocidade
+#        self.marca = marca
+#    
+#    def mostrar_info(self):
+#        print(f"Marca: {self.marca}")
+#        print(f"Velocidade: {self.velocidade} km/h")
+#
+#class Carro(Veiculo):
+#    def __init__(self, marca, velocidade, portas):
+#        super().__init__(marca, velocidade)
+#        self.portas = portas
+#
+#    def mostrar_info_completo(self):
+#        self.mostrar_info()  
+#        print(f"Portas: {self.portas}")
+#
+#meu_veiculo = Carro("Toyota", 120, 4)
+#meu_veiculo.mostrar_info_completo()
+
+#class Funcionario:
+#    def __init__(self, salario):
+#        self.salario = salario
+#        self.bonus = 0.1
+#    
+#    def calcular_bonus(self):
+#        total_bonus = self.bonus * self.salario
+#        print(f"O bonus do funcionario é {total_bonus}")
+#
+#class Gerente(Funcionario):
+#    def calcular_bonus(self):
+#        self.bonus = 0.2
+#        total_bonus = self.bonus * self.salario
+#        print(f"O bonus do funcionario é {total_bonus}")
+#
+#funcionario1 = Funcionario(3000)
+#gerente1 = Gerente(5000)
+#funcionario1.calcular_bonus()
+#gerente1.calcular_bonus()
+
+#class Bola:
+#    def __init__(self, cor, circunferencia, material):
+#        self.cor = cor
+#        self.circunferencia = circunferencia
+#        self.material = material
+#    
+#    def troca_cor(self, nova_cor):
+#        self.cor = nova_cor
+#        
+#    def mostra_cor(self):
+#        print(f"A cor da bola é {self.cor}")
+#
+#minha_bola = Bola("azul", 50, "plastico")
+#minha_bola.mostra_cor()
+#minha_bola.troca_cor("vermelho")
+#minha_bola.mostra_cor()
+

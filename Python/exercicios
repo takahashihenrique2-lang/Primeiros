@@ -1,0 +1,953 @@
+#texto = input("Digite um texto: ")
+#ltexto = texto.lower()
+#print("Texto em minúsculas:", ltexto)
+
+#texto = input("Digite um texto: ")
+#ltexto = texto.upper()
+#print("Texto em maiúsculas:", ltexto)
+
+#text = input("Digite uma palavra:")
+#text1 = text.capitalize()
+#print("Texto com a primeira letra maiúscula:", text1)
+
+#texto = input("Digite um texto: ")
+#text = texto.title()
+#print("Texto com a primeira letra de cada palavra maiúscula:", text)
+
+#texto = input("Digite um texto: ")
+#text = texto.strip()
+#print("Texto sem espaços no início e no fim:", text)
+
+#texto = input("Digite um texto que contenha a letra'A': ")
+#text = texto.replace('A', '@').replace('a', '@')
+#print("Texto com 'A' substituído por '@':", text)
+
+#frase = input("Digite uma frase: ")
+#palavras = frase.split()
+#quantidade = len(palavras)
+#print("Quantidade de palavras:", quantidade)
+
+#lista = []
+#for i in range(4):
+#    algo = input("Digite algo: ")
+#    lista.append(algo)
+#frase = ' '.join(lista)
+#print("Frase formada:", frase)
+
+#frase = input("Digite uma frase: ")
+#if frase.startswith('Olá'):
+#    print("A frase começa com 'Olá'")  
+#else:
+#    print("A frase não começa com 'Olá'") 
+
+#frase = input("Digite uma frase: ")
+#palavra = input("Digite uma palavra para verificar se está na frase: ")
+#res = frase.find(palavra)
+#print(res)
+#if res != -1:
+#    print(f"A palavra '{palavra}' foi encontrada na frase no índice {res}.")
+#else:
+#    print(f"A palavra '{palavra}' não foi encontrada na frase.")
+
+#nome = input("Digite seu nome completo: ")
+#nome_strip = nome.strip()
+#nome_lower = nome_strip.lower()
+#nome_title = nome_lower.title()
+#print("Nome formatado:", nome_title)
+
+#email = input("Digite seu email: ")
+#if "@" in email and email.endswith(".com"):
+#    print("Email válido")
+#else:
+#    print("Email inválido")
+
+#texto = input("Digite um texto: ")
+#res = texto.split()
+#quantidade = len(res)
+#print("Quantidade de palavras:", quantidade)
+
+#texto = input("Digite um texto: ")
+#letra = input("Digite uma letra para contar quantas vezes ela aparece no texto: ")
+#texto = texto.lower()
+#contador = texto.count(letra)
+#print(f"A letra '{letra}' aparece {contador} vezes no texto.")
+
+#num = input('Digite um número:')
+#distancia = abs(int(num))
+#print(f'A distância do número {num} até 0 é {distancia}.')
+
+#num = float(input('Digite um número real:'))
+#res = round(num)
+#print(f'O número {num} arredondado é {res}.')
+
+#num1 = float(input('Digite o primeiro número:'))
+#num2 = float(input('Digite o segundo número:'))
+#res = pow(num1, num2)
+#print(f'O número {num1} elevado a {num2} é {res}.')
+
+#num1 = float(input('Digite o primeiro número:'))
+#num2 = float(input('Digite o segundo número:'))
+#res = num1 ** num2
+#print(f'O número {num1} elevado a {num2} é {res}.')
+
+#num1 = float(input('Digite um número real:'))
+#num2 = float(input('Digite outro número real:'))
+#res = num1 // num2
+#print(f'A parte inteira da divisão entre {num1} e {num2} é {res}.')
+
+#seg = int(input('Digite um valor em segundos:'))
+#horas = seg // 3600
+#minutos = (seg % 3600) // 60
+#segundos = seg % 60
+#print(f'O valor em horas é: {horas}, em minutos é: {minutos} e em segundos é: {segundos}.')
+
+#num1 = float(input('Digite o primeiro número:'))
+#num2 = float(input('Digite o segundo número:'))
+#res = abs(num1 - num2)
+#print(f'A distância entre os números é: {res}.')
+
+#NORMALIZADOR DE TEXTO
+#texto = input("Digite um texto: ")
+#texto = texto.strip()
+#texto = ' '.join(texto.split())
+#texto = texto.lower()
+#texto = texto.replace('á', 'a').replace('à', 'a').replace('ã', 'a').replace('â', 'a').replace('é', 'e').replace('ê', 'e').replace('í','i').replace('ó', 'o').replace('ô', 'o').replace('õ', 'o').replace('ú', 'u').replace('ç', 'c')
+#print("Texto normalizado:", texto)
+
+#VERIFICADOR DE PALÍNDROMO
+#texto = input("Digite um texto: ")
+#texto = texto.strip().lower()
+#texto_sem_espaços = texto.replace(" ", "")
+#texto_invertido = texto_sem_espaços[::-1]
+#if texto_sem_espaços == texto_invertido:
+#    print("O texto é um palíndromo.")
+#else:
+#    print("O texto não é um palíndromo.")
+
+#CENSURA
+#texto = input("Digite um texto: ")
+#palavras_proibidas = ["abacate", "abacaxi", "melão", "laranja", "pera"]
+#for palavra in palavras_proibidas:
+#    texto = texto.replace(palavra, "***")
+#print("Texto censurado:", texto)
+
+#ANALISADOR NUMÉRICO
+#lista_numeros = []
+#positivos = 0
+#negativos = 0
+
+#while True:
+#    res = input("Digite um número (ou 'fim' para encerrar): ")
+#    if res.lower() == 'fim':
+#        break
+#    else:
+#        numero = float(res)
+#        lista_numeros.append(numero)
+#for numero in lista_numeros:
+#            if numero > 0:
+#                    positivos += 1
+#            elif numero < 0:
+#                negativos += 1
+
+#print("O maior número é:", max(lista_numeros))
+#print("O menor número é:", min(lista_numeros))
+#print("A média dos números é:", sum(lista_numeros) / len(lista_numeros))
+#print("Quantidade de números positivos:", positivos)
+#print("Quantidade de números negativos:", negativos)
+
+#CONVERSOR DE TEMPO
+#total_segundos = int(input("Digite um valor em segundos: "))
+#dias = total_segundos // 86400
+#horas = (total_segundos % 86400) // 3600
+#minutos = (total_segundos % 3600) // 60
+#segundos = total_segundos % 60
+#print(f"{dias} dias, {horas} horas, {minutos} minutos e {segundos} segundos.")
+
+#ef classificar_idade(idade):
+#    if idade < 13:
+#        return "Criança"
+#    elif idade < 18:
+#        return "Adolescente"
+#    else:
+#        return "Adulto"
+#idade = int(input("Digite a idade: "))
+#print("Classificação:", classificar_idade(idade))
+
+#Você está criando um programa em Python para ajudar uma pessoa a controlar seus gastos mensais.
+#O programa deve:
+#Pedir ao usuário o valor de cada gasto (um por vez).
+#O usuário pode digitar fim para encerrar a entrada de dados.
+#Após encerrar, o programa deve mostrar:
+#Total gasto
+#Média dos gastos
+#Maior gasto
+#Menor gasto
+#Quantos gastos foram acima da média
+#Quantos gastos foram considerados altos (acima de R$ 500)
+
+#gastos = []
+#while True:
+#    entrada = input("Digite o valor do gasto (ou 'fim' para encerrar): ")
+#    if entrada.lower() == 'fim':
+#        break
+#    else:
+#        try:
+#            gasto = float(entrada)
+#        except ValueError:
+#            print("Entrada inválida. Por favor, digite um número ou 'fim' para encerrar.")
+#        gastos.append(gasto)
+#total = sum(gastos)
+#media = total / len(gastos)
+#maior = max(gastos)
+#menor = min(gastos)
+
+#acima_media = sum(1 for gasto in gastos if gasto > media)
+#altos = sum(1 for gasto in gastos if gasto > 500)
+
+#print("Total gasto:", total)
+#print("Média dos gastos:", media)
+#print("Maior gasto:", maior)
+#print("Menor gasto:", menor)
+#print("Quantidade de gastos acima da média:", acima_media)
+#print("Quantidade de gastos altos (acima de R$ 500):", altos)
+
+#PESO EXCEDENTE DE PEIXES
+#peso = float(input("Digite o peso total dos peixes em kg: "))
+#if peso > 50:
+#    excesso = peso - 50
+#    multa = excesso * 4.00
+#    print(f"Peso excedente: {excesso} kg")
+#    print(f"Multa a ser paga: R$ {multa:.2f}")
+
+#SALÁRIO COM IMPOSTOS
+#salário_bruto = float(input("Digite o salário bruto: "))
+#ir = salário_bruto * 0.11
+#inss = salário_bruto * 0.08
+#sindicato = salário_bruto * 0.05
+#salário_liquido = salário_bruto - ir - inss - sindicato
+#print(f"Salário bruto: R$ {salário_bruto:.2f}")
+#print(f"IR (11%): R$ {ir:.2f}")
+#print(f"INSS (8%): R$ {inss:.2f}")
+#print(f"Sindicato (5%): R$ {sindicato:.2f}")
+#print(f"Salário líquido: R$ {salário_liquido:.2f}")
+
+#PINTAR UMA ÁREA
+#try:
+#    area = float(input("Digite a área a ser pintada em metros quadrados: "))
+#    litros_necessarios = area / 3
+#    latas = int(litros_necessarios / 18) + (1 if litros_necessarios % 18 > 0 else 0)
+#    custo = latas * 80
+#    sobras = (latas * 18) - litros_necessarios
+#    print(f"Quantidade de latas necessárias: {latas}")
+#    print(f"Custo total: R$ {custo:.2f}")
+#    if sobras > 0:
+#            print(f"Litros de tinta que sobram: {sobras:.2f}")
+#except ValueError:
+#    print("Entrada inválida. Por favor, digite apenas um número válido.")
+
+#ORDEM CRESCENTE
+#notas = [8, 3.5, 8.7, 9, 9.3, 7.5, 6.8, 9.1, 8.2, 7.9]
+#ordem = sorted(notas)
+#print("Notas em ordem crescente:", ordem)
+
+#
+#salario = float(input("Digite o salário do funcionário: "))
+#def mostrar_aumento(salario, aumento, percentual, novo_salario):
+#    print(f"Salário antes do reajuste: R$ {salario:.2f}")
+#    print(f"Valor do aumento: R$ {aumento:.2f}")
+#    print(f"Percentual de aumento: {percentual:.0%}")
+#    print(f"Novo salário após o aumento: R$ {novo_salario:.2f}")
+#if salario <= 280:
+#    per = 0.20
+#    aumento = salario * per
+#elif salario <= 700:
+#    per = 0.15
+#    aumento = salario * per      
+#elif salario <= 1500:
+#    per = 0.10
+#    aumento = salario * per
+#else:    
+#    per = 0.05
+#    aumento = salario * per
+#novo_salario = salario + aumento
+#print(mostrar_aumento(salario, aumento, per, novo_salario))
+
+#TRIÂNGULOS
+#lados = []
+#for i in range(3):
+#    lado = float(input(f"Digite o comprimento do lado {i+1}: "))
+#    lados.append(lado)
+#if lados[0]<lados[1] + lados[2] and lados[1]<lados[0] + lados[2] and lados[2]<lados[0] + lados[1]:
+#    print("Os lados formam um triângulo.")
+#    if lados[0] == lados[1] == lados[2]:
+#        print("O triângulo é equilátero.")
+#    elif lados[0] == lados[1] or lados[0] == lados[2] or lados[1] == lados[2]:
+#        print("O triângulo é isósceles.")
+#    else:
+#        print("O triângulo é escaleno.")
+#else:    print("Os lados não formam um triângulo.")
+
+#ANOS BISSEXTOS
+#ano = int(input("Digite um ano: "))
+#if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+#    print(f"O ano {ano} é bissexto.")
+#else:    
+#    print(f"O ano {ano} não é bissexto.")
+
+#
+#num = int(input("Digite um número inteiro: "))
+#centenas = num // 100
+#resto = num % 100
+#dezenas = resto // 10
+#unidades = resto % 10  
+#if centenas > 1:
+#    final_centenas = (f"{centenas} centenas")
+#elif centenas == 1:
+#    final_centenas = (f"{centenas} centena")
+#else:
+#    final_centenas = "0 centenas"
+#
+#if dezenas > 1:
+#    final_dezenas = (f"{dezenas} dezenas")
+#elif dezenas == 1:
+#    final_dezenas = (f"{dezenas} dezena")
+#else:
+#    final_dezenas = "0 dezenas"
+#
+#if unidades > 1:
+#    final_unidades = (f"{unidades} unidades")
+#elif unidades == 1:
+#    final_unidades = (f"{unidades} unidade")
+#else:
+#    final_unidades = "0 unidades"
+#print(f"O número {num} possui {final_centenas}, {final_dezenas} e {final_unidades}")
+
+#
+#print("Irei fazer cincp perguntas para você, responda com 'sim' ou 'não'.")
+#perguntas = [
+#    "Telefonou para a vítima?",
+#    "Esteve no local do crime?",
+#    "Mora perto da vítima?",
+#    "Devia para a vítima?",
+#    "Já trabalhou com a vítima?"
+#]
+#respostas = []
+#for pergunta in perguntas:
+#    resposta = input(pergunta + " ").strip().lower()
+#    while resposta not in ['sim', 'não']:
+#        print("Resposta inválida. Por favor, responda com 'sim' ou 'não'.")
+#        resposta = input(pergunta + " ").strip().lower()
+#    respostas.append(resposta)
+#sim_count = respostas.count('sim')
+#if sim_count == 2:
+#    print("Classificação: Suspeita")        
+#elif sim_count in [3, 4]:
+#    print("Classificação: Cúmplice")        
+#elif sim_count == 5:
+#    print("Classificação: Assassino")
+#else:   
+#    print("Classificação: Inocente")   
+
+
+#try:
+#    tipo = input("Digite qual combustível deseja (Digite G para gasolina ou A para álcool): ").strip().upper()
+#    litros = float(input("Digite a quantidade de litros que deseja abastecer: "))
+#    if tipo == 'A':
+#        if litros <= 20:
+#            preco_litro = 2.90 * 0.97
+#        else:
+#            preco_litro = 2.90 * 0.95
+#    elif tipo == 'G':
+#        if litros <= 20:
+#            preco_litro = 3.30 * 0.96
+#        else:
+#            preco_litro = 3.30 * 0.94
+#    print(f"O preço por litro é R$ {preco_litro:.2f}")
+#    print(f"O valor total do abastecimento é R$ {preco_litro * litros:.2f}")
+#except ValueError:
+#    print("Entrada inválida. Por favor, digite os valores corretamente.")
+
+#
+#quant_maças = float(input("Digite a quantidade de maçãs compradas: "))
+#quant_morangos = float(input("Digite a quantidade de morangos comprados: "))
+#total_kg = quant_maças + quant_morangos
+#if quant_maças <= 5:
+#    preco_maças = 1.80 * quant_maças
+#else:
+#    preco_maças = 1.50 * quant_maças
+#if quant_morangos <= 5:
+#    preco_morangos = 2.50 * quant_morangos 
+#else:
+#    preco_morangos = 2.20 * quant_morangos
+#if total_kg > 8 or (preco_maças + preco_morangos) > 25:
+#        desconto = 0.10
+#        preco_total = (preco_maças + preco_morangos) * (1 - desconto)
+#else:
+#        preco_total = preco_maças + preco_morangos
+#print(f"O valor total da compra é R$ {preco_total}")
+
+###usuario = input("Digite seu nome de usuário: ")
+#senha = input("Digite sua senha: ")
+#while senha == usuario:
+#    print("A senha não pode ser igual ao nome de usuário. Por favor, digite uma senha diferente.")
+#    senha = input("Digite sua senha: ") 
+#print("Cadastro realizado com sucesso!")
+
+#
+#popA = int(input("Digite a população inicial da cidade A: "))
+#popB = int(input("Digite a população inicial da cidade B: "))
+#crescimentoA = float(input("Digite a taxa de crescimento anual da cidade A (em decimal, por exemplo, 0.02 para 2%): "))
+#crescimentoB = float(input("Digite a taxa de crescimento anual da cidade B (em decimal, por exemplo, 0.03 para 3%): "))
+#if popA <= 0 or popB <= 0:
+#    print("A população inicial deve ser um número positivo.")
+#elif popA >= popB:
+#    print("A população da cidade A já é maior ou igual à população da cidade B.")
+#if crescimentoA <= crescimentoB:
+#    print("A população da cidade A nunca ultrapassará a população da cidade B com as taxas de crescimento fornecidas.")
+#anos = 0
+#while popA < popB:
+#    popA += popA * crescimentoA
+#    popB += popB * crescimentoB
+#    anos += 1   
+#
+#print(f"Serão necessários {anos} anos para que a população A ultrapasse ou iguale a população B.")
+
+#lista = []
+#for i in range(0,20):
+#    lista.append(str(i))
+#    lista_nova = " ".join(lista)
+#print(lista_nova)
+
+#for i in range(25):
+#    if i % 2 != 0:
+#        print(i)
+    
+#num1 = int(input("Digite o primeiro número: "))
+#num2 = int(input("Digite o segundo número: "))
+#soma = 0
+#for i in range(num1+1, num2):
+#    soma += i   
+#
+#print(f"A soma dos números entre {num1} e {num2} é: {soma}")
+
+#print("Digite um número inteiro positivo para te mostrar a tabuada dele:")
+#num = int(input("Número: "))
+#if num < 0:
+#    print("Por favor, digite um número inteiro positivo.")  
+#else:   
+#    print(f"Tabuada do {num}:")
+#    for i in range(11):
+#        print(f"{num} x {i} = {num * i}")
+
+
+
+#DEPOIS REVER ESSE AQUI PARA ENTENDER
+#fatorial = int(input("Digite um número inteiro para calcular seu fatorial: "))
+#if fatorial < 0:
+#    print("Por favor, digite um número inteiro não negativo.")
+#else:
+#    resultado = 1
+#    for i in range(2, fatorial + 1):
+#        resultado *= i
+#        print(f"O fatorial de {fatorial} é: {resultado}")
+
+#consoantes = "bcdfghjklmnpqrstvwxyz"
+#vogais = "aeiou"
+#texto = input("Digite um texto: ")
+#texto = texto.lower()
+#consoantes_contador = 0
+#for letra in texto:
+#    if letra in consoantes:
+#        consoantes_contador += 1
+#vogais_contador = 0
+#for letra in texto:     
+#    if letra in vogais:
+#        vogais_contador += 1
+#print(f"O número de consoantes no texto é: {consoantes_contador}")
+#print(f"O número de vogais no texto é: {vogais_contador }")
+
+#temp_meses = {}
+#for i in range(12):
+#    mes = input("Digite o nome de um mês: ").strip().lower()
+#    temp = float(input("Digite a temperatura média desse mês: "))
+#    temp_meses[mes] = temp
+#print("Temperaturas médias por mês:")
+#for mes, temp in temp_meses.items():
+#    print(f"{mes.capitalize()}: {temp}°C")
+#print(f"Média anual de temperatura: {sum(temp_meses.values()) / len(temp_meses):.2f}°C")
+
+#num1 = float(input("Digite o primeiro número: "))
+#num2 = float(input("Digite o segundo número: "))
+#def somar(a, b):
+#    return a + b
+#def subtrair(a, b):
+#    return a - b    
+#print (f"A soma de {num1} e {num2} é: {somar(num1, num2)}")
+#print (f"A subtração de {num1} e {num2} é: {subtrair(num1, num2)}")
+
+#num = int(input("Digite um número inteiro: "))
+#def verificar_paridade(n):
+#    if n % 2 == 0:
+#        return "par"
+#    else:
+#        return "ímpar"
+#print(f"O número {num} é {verificar_paridade(num)}.")
+
+#def temperatura_fahrenheit(celsius):
+#    return (celsius * 9/5) + 32
+#temp_celsius = float(input("Digite a temperatura em Celsius: "))
+#temp_fahrenheit = temperatura_fahrenheit(temp_celsius)
+#print(f"A temperatura {temp_celsius}°C é equivalente a {temp_fahrenheit:.2f}°F.")
+
+#nome = input("Digite seu nome: ")
+#def saudção(nome):
+#    print(f"Olá, {nome}! Seja bem-vindo(a)!")
+#saudção(nome)
+
+#class Carro:
+#    def __init__(self, marca, modelo, ano):
+#        self.marca = marca
+#        self.modelo = modelo
+#        self.ano = ano
+#    def exibir_informacoes(self):
+#        print(f"Marca: {self.marca}")
+#        print(f"Modelo: {self.modelo}")
+#        print(f"Ano: {self.ano}")
+#marc = input("Digite a marca do carro: ")
+#modelo = input("Digite o modelo do carro: ")
+#ano = int(input("Digite o ano do carro: "))
+#meu_carro = Carro(marc, modelo, ano)   
+#meu_carro.exibir_informacoes()
+#class Banco:
+#    def __init__(self, nome, saldo_inicial):
+#        self.nome = nome
+#        self.saldo = saldo_inicial
+#    def depositar(self, valor):
+#        self.saldo += valor
+#        print(f"Depósito de R$ {valor:.2f} realizado. Saldo atual: R$ {self.saldo:.2f}")
+#    def sacar(self, valor):
+#        if valor > self.saldo:
+#            print("Saldo insuficiente para saque.")
+#        else:
+#            self.saldo -= valor
+#            print(f"Saque de R$ {valor:.2f} realizado. Saldo atual: R$ {self.saldo:.2f}")
+#nome = input("Digite o nome do titular da conta: ")
+#saldo_inicial = float(input("Digite o saldo inicial da conta: "))
+#conta = Banco(nome, saldo_inicial)
+#while True:
+#    acao = input("Digite 'depositar' para fazer um depósito, 'sacar' para fazer um saque ou 'sair' para encerrar: ").strip().lower()
+#    if acao == 'depositar':
+#        valor = float(input("Digite o valor a ser depositado: "))
+#        conta.depositar(valor)
+#    elif acao == 'sacar':
+#        valor = float(input("Digite o valor a ser sacado: "))
+#        conta.sacar(valor)
+#    elif acao == 'sair':
+#        print("Encerrando o programa. Obrigado por usar nosso banco!")
+#        break
+#    else:
+#        print("Ação inválida. Por favor, digite 'depositar', 'sacar' ou 'sair'.")
+
+#class Pessoa:
+#    def __init__(self, nome, idade):
+#        self.nome = nome
+#        self.idade = idade
+#    def mostrar_informacoes(self):
+#        return(f"Nome: {self.nome}, Idade: {self.idade}")
+#    def maior_de_idade(self):
+#        if self.idade >= 18:
+#            return f"{self.nome} é maior de idade."
+#        else:
+#            return f"{self.nome} é menor de idade."
+#nome = input("Digite o nome da pessoa: ")
+#idade = int(input("Digite a idade da pessoa: "))
+#pessoa = Pessoa(nome, idade)
+#print(pessoa.mostrar_informacoes())
+#print(pessoa.maior_de_idade())
+
+
+
+#43 EXERCICIOS DA BASE
+#faturamento_inical = 50000
+#percentual_bônus = 0.10
+#bonus = faturamento_inical * percentual_bônus
+#fat_final = faturamento_inical - bonus
+#
+#print(f"O faturamento final é {fat_final:.2f}")
+
+#estoque = 250
+#vendas = 78
+#chegada = 100
+#estoque_atual = estoque - vendas + chegada
+#print(f"O estoque atual é: {estoque_atual}")
+
+#caixas = 1250
+#capacidade = 12
+#quantidade_inteira = caixas // capacidade
+#quantidade_restante = caixas % capacidade
+#caminhoes = quantidade_inteira + 1
+
+#faturamento = 15000
+#custos_fixos = 5000
+#impostos = 0.15
+#calc_imposto = faturamento * impostos
+#lucro = faturamento - custos_fixos - calc_imposto
+#margem_de_lucro = (lucro / faturamento) 
+#meta_atingida = 0.30
+#print(f"O lucro é: R$ {lucro:.2f}")
+#if margem_de_lucro > meta_atingida:
+#    print("A meta foi atingida.")
+#else:
+#    print("A meta não foi atingida.")
+
+#total_meses = 40
+#anos = total_meses // 12
+#meses = total_meses % 12
+#print(f"{total_meses} meses correspondem a {anos} anos e {meses} meses.")
+
+#faturamento = 45000
+#custo = 23500
+#lucro = faturamento - custo
+#margem_de_lucro = (lucro / faturamento) * 100
+#print(f"O lucro é: R$ {lucro:.2f}")
+#print(f"A margem de lucro é: {margem_de_lucro:.2f}%")
+
+#nome = " mArcoS aNtOnIo   "
+#email =" MARCO.SANTONIO@GMAIL.COM  "
+#nome_formatado = nome.strip().title()
+#email_formatado = email.strip().lower()
+#print(f"Nome formatado: {nome_formatado}")
+#print(f"Email formatado: {email_formatado}")
+
+#email = "andre_silva@empresa.com.br"
+#novo_dominio = "@grupocorp.com"
+#posicao_a = email.find("@")
+#print(posicao_a)
+#email_novo = email[:posicao_a] + novo_dominio
+#print(email_novo)  
+
+#email = "beatriz.oliveira@gmail.com"
+#posicao_a = email.find("@")
+#apenas_nome = email[:posicao_a]
+#print(apenas_nome)
+
+#nome_inicial = "lucas Ferreira Souza"
+#posicao_espaco = nome_inicial.find(" ")
+#nome = nome_inicial[:posicao_espaco].capitalize()
+#print(nome)
+#print(f"Olá {nome}, seja bem vindo!")
+
+#valor_bruto = input("Digite o valor bruto:")
+#valor_formatado = float(valor_bruto.strip("R$").replace(",", "."))
+#imposto = 0.15
+#valor_imposto = valor_formatado * imposto
+#print(f" O valor do imposto é {valor_imposto:.2f}")
+
+#nome = input("Digite seu nome completo:").capitalize()
+#email = input("Digite seu email pessoal:")
+#pri_nome = nome.find(" ")
+#nome_formatado = nome[:pri_nome]
+#email_formatado = email.strip().lower()
+#print(f"Cadastro concluído {nome_formatado}. Email de acesso {email_formatado}")
+
+#loja_a = (input("Digite o faturamento da loja A:"))
+#loja_b = (input("Digite o faturamento da loja B:"))
+#
+#loja_a = loja_a.strip().replace("R$", "").replace(".", "").replace(",",".")
+#loja_b = loja_b.strip().replace("R$", "").replace(".", "").replace(",",".")
+#loja_a = float(loja_a)
+#loja_b = float(loja_b)
+#total = loja_a + loja_b
+#media = ( loja_a + loja_b)/ 2
+#print(f"A meta é {media}")
+#if loja_a > media:
+#    print("A meta foi atingida")
+#else:
+#    print("A loja A não atingiu a meta")
+#
+#if loja_b > media:
+#    print("A meta foi atingida")
+#else:
+#    print("A loja B não atingiu a meta")
+
+#vendas = [1500, 200, 800, 3500, 1200]
+#total = sum(vendas)
+#media = total/len(vendas)
+#maior_venda = max(vendas)
+#menor_venda = min(vendas)
+#print(f"O total de vendas foi {total}")
+#print(f"A média diária de vendas foi {media}")
+#print(f"A maior venda foi {maior_venda}, e a menor venda foi {menor_venda}")
+
+#estoque = ["monitor", "teclado", "mouse", "headset"]
+#estoque.append("webcam")
+#indice = estoque.index("teclado")
+#estoque[indice] = "teclado mecanico"
+#if "impressora" in estoque == True:
+#    print("A impressora esta na lista")
+#else:
+#    print("A impressora não está na lista")
+#estoque.remove("mouse")
+#print(estoque)
+
+#fretes = [50, 80, 20,150, 40]
+#fretes.sort(reverse=True)
+#top_fretes = fretes[:2]
+#print(fretes)
+#print(top_fretes)
+
+#rotas = ["Sao Paulo,", "Campinas", "Jundiai", "Sorocaba"]
+#novas_cidades = ["Itu", "Valinhos"]
+#rotas.extend(novas_cidades)
+#indice = rotas.index("Sorocaba") + 1
+#print(rotas)
+#print(f"Sorocaba é a {indice} cidade da rota")
+
+#precos = [100.0, 250.0, 500.0]
+#vinhos = ["Branco", "Tinto", "Champagne"]
+#novo_vinho = input("Digite o vinho que deseja:")
+#novo_preco = input("Digite o novo preço do produto:")
+#novo_preco = novo_preco.replace("R$", "").replace(".", "").replace(",", ".")
+#posicao_vinho = vinhos.index(novo_vinho)
+#precos[posicao_vinho] = novo_preco
+#print(vinhos)
+#print(precos)
+
+#investimento = input("Digite o valor que deseja investir:")
+#investimento = investimento.replace("R$", "").replace(".", "").replace(",", ".")
+#investimento = float(investimento)
+#if investimento < 1000:
+#    print("Perfil iniciante, recomendamos Tesouro direto")
+#elif investimento <= 5000:
+#    print("Perfil intermediário, recomendamos Fundos imobiliários")
+#elif investimento > 5000:
+#    print("Perfil avançado, recomendamos Ações")
+#else:
+#    print("Valor inválido, digite um valor válido")
+
+#admins = ["ana@empresa.com.br", "guilherme@empresa.com.br", "felipe@empresa.com.br"]
+#acesso = input("Digite seu email para verificarmos seu acesso:")
+#acesso = acesso.strip().lower().replace(" ", "")
+#if acesso in admins:
+#    print("Acesso iberado")
+#else:
+#    print("Acesso negado")
+
+#compra = input("Digite o valor da compra:")
+#compra = compra.replace("R$", "").replace(".", "").replace(",", ".")
+#compra = float(compra)
+#if compra >= 500:
+#    desconto = 0.15
+#elif compra >= 200:
+#    desconto = 0.10
+#else:
+#    desconto = 0
+#valor_desconto = compra*desconto
+#valor_final = compra - (valor_desconto)
+#print(f"O valor final da compra foi R${valor_final:.2f}, e o valor do desconto foi R${valor_desconto:.2f}")
+
+#eta_indiv = 1000
+#endas_indiv = 1200
+#
+#eta_loja = 5000
+#endas_loja = 6500
+#
+#f vendas_indiv >= meta_indiv and vendas_loja >= meta_loja:
+#   bonus = 0.2
+#lse:
+#   bonus = 0
+#onus_total = vendas_indiv*bonus
+#alor_vendedor = vendas_indiv + bonus_total
+#rint(f"Seu bonus esse mês foi de R${bonus_total}")
+
+#texto = []
+#reclamacao = input("Digite seu texto de reclamação:").lower()
+#texto.append(reclamacao)
+#if "pagamento" or "boleto" in texto:
+#    print('Encaminhando mensagem para o financeiro')
+#elif "atraso" or "entrega" in texto:
+#    print("Encaminhando mensagem para a logística")
+#else:
+#    print("Encaminhando para suporte geral")
+
+#clientes = {"Lira":5000, "Alon":3000, "Julia":4500}
+#nova_compra = 1500
+#clientes["Alon"] = clientes["Alon"] + nova_compra
+#clientes["Marcos"] = 2000
+#print(clientes)
+
+#estoque = {"teclado": 50, "mouse": 120, "monitor": 30}
+#produto = input("Digite o nome de um produto:")
+#produto = produto.strip().lower()
+#if produto in estoque:
+#    print(f"A quantidade desse produto no estoque é {estoque[produto]}")
+#else:
+#    print("produto não enconttrado nos sistema")
+    
+#vendas_regiao = {"Norte":15000,"Sul":22000 ,"Leste":18000 , "Oeste":25000 }
+#total = sum(vendas_regiao.values())
+#qtde = len(vendas_regiao)
+#media = total/qtde
+#print(total, total)
+
+#desempenho = {"Lira" : [8, 9, 7], "Paula":[10, 9, 10], "Tiago": [6, 7, 8]}
+#desempenhp_paula = desempenho["Paula"]
+#media = sum(desempenhp_paula)/len(desempenhp_paula)
+#print(f"A media de paula é {media:.2f}")
+#
+#estoque = {"celular":1500 , "camera":800 , "radio":200 , "fone":100 }
+#valor_estoque = estoque.pop("radio")
+#print(estoque)
+#print(f"O valor do item removido é {valor_estoque}")
+#if "celular" in estoque:
+#    print("True")
+#else:
+#    print("False")
+
+#minutos = 10
+#for i in range(10):
+#    print(f"Lembrete: a reunião começa em {minutos} minutos")
+#    minutos -= 1 
+
+#total_comissao = 0
+#vendas = [2000, 5000, 1000, 8000, 3000]
+#for i in vendas:
+#    if i > 4000:
+#        comissao = 0.1
+#    else:
+#        comissao = 0.05
+#    total_comissao += comissao * i
+#print(total_comissao)
+
+#estoque_produtos = ["monitor", "teclado", "mouse", "headset", "gabinete"]
+#estoque_quantidades = [5, 12, 2, 8, 15]
+#for qtde in estoque_quantidades:
+#    if qtde < 8:
+#        indice = estoque_quantidades.index(qtde)
+#        print(f"Alerta, o produto {estoque_produtos[indice]} possui apenas {qtde} quantidades")
+#    else:
+#        indice = estoque_quantidades.index(qtde)
+#        print(f"O produto {estoque_produtos[indice]} esta com boas quantidades no estoque")
+########OOOOOOOOOOOOUUUUUUUUUUUUUUUU##########
+#stoque_produtos = ["monitor", "teclado", "mouse", "headset", "gabinete"]
+#stoque_quantidades = [5, 12, 2, 8, 15]
+#for i, qtde in enumerate(estoque_quantidades):
+#   if qtde <8:
+#       print(f"O produto {estoque_produtos[i]} esta com apenas {qtde} unidades no estoque")
+#   else:
+#       print(f"O produto {estoque_produtos[i]} tem unidades o suficiente no estoque")
+
+#metas = {"jan" : 1000, "fev" : 1200 , "mar" : 1100}
+#gastos = {"jan" : 900, "fev" : 1350, "mar" : 1100}
+#for mes in gastos:
+#    if gastos[mes] <= metas[mes]:
+#        print("Dentro do orçamento")
+#    else:
+#        diferenca = gastos[mes] - metas[mes]
+#        print(f"Estrapolou R${diferenca} nos gastos")
+
+#precos = {"celular" : 1500, "tablet" : 2500, "notebook" : 5000}
+#percentual = float(input("Digite o percetual de aumento(digite por exemplo 10 para 10%)"))
+#percentual = percentual/100
+#for per in precos:
+#    precos[per] = precos[per] + (precos[per]*percentual)
+#print(precos)
+
+#produtos_baguncados = ["iphone13", "MACBOOK PRO", "aIrPoDS", "  ipad mini", " caixa de som bluetooth"]
+#def padronizar_texto(texto):
+#    texto = texto.strip().title()
+#    return texto
+#for produto in produtos_baguncados:
+#    produto = padronizar_texto(produto)
+#    print(produto)
+#############OOOOOOOOOOOOOOUUUUUUUUUUUUUUUUUUU########## devolver a resposta em uma lista
+#produtos_baguncados = ["iphone13", "MACBOOK PRO", "aIrPoDS", "  ipad mini", " caixa de som bluetooth"]
+#def padronizar_texto(texto):
+#    texto = texto.strip().title()
+#    return texto
+#produtos_baguncados = list(map(padronizar_texto, produtos_baguncados))
+#print(produtos_baguncados)
+
+#def calcular_iss(valor):
+#    if valor > 5000:
+#        taxa = 0.05
+#    else:
+#        taxa = 0.03
+#    valor_iss = valor * taxa
+#    return valor_iss
+#print(calcular_iss())
+
+#def analisar_margem(faturamento, custo):
+#    lucro = faturamento - custo
+#    margem = lucro/faturamento
+#    if margem >= 0.3:
+#        return "Margem saudável"
+#    else:
+#        return "Margem baixa"
+#print(analisar_margem(10000, 6000))
+
+#equipe_vendas = {"João" : 1200, "Maria" : 9500, "Ricardo" : 10000, "Fernanda" : 15200, "Paulo" : 5000}
+#meta = 10000
+#def quem_bateu_meta(vendas:dict, meta:float):
+#    for valor in vendas:
+#        if vendas[valor] >= meta:
+#            print(f"vendedor {valor} bateu a meta")
+#quem_bateu_meta(equipe_vendas, meta)
+
+#lista_precos = [100, 50, 20]
+#cotacao = 5.20
+#def converter_para_real(preco, cotacao):
+#    real = preco * cotacao
+#    return real
+#def processar_lista_precos(lista:list, cotacao):
+#    for preco in lista:
+#        convertido = converter_para_real(preco, cotacao)
+#        print(convertido)
+#processar_lista_precos(lista_precos, cotacao)
+
+#coordenadas = (-23.5505, -46.6333)
+#latitude, longitude = coordenadas  #ou# latitude = coordenadas[0], longitude = coordenadas[1]
+#print(f"Entrega saindo, latitude {latitude} e longitude {longitude}")
+
+#def calcular_folha(salario):
+#    imposto = 0.1
+#    desconto_imposto = salario * imposto
+#    salario_liquido = salario - desconto_imposto
+#    return desconto_imposto, salario_liquido
+#resultado = calcular_folha(5000)
+#desconto = resultado
+#salario_liquido = resultado
+#print(f"Desconto R${desconto}, salario liquido R${salario_liquido}")
+
+#####(produto, preco unitario, quantidade)######
+#vendas_dia = [("monitor", 900, 2), ("teclado", 150, 5), ("mouse", 80, 10)]
+#for produtos in vendas_dia:
+#    produto, preco_unitario, quantidade = produtos
+#    print(f"{produto}, total: {preco_unitario * quantidade}")
+#############OOOOOOOOOOOOOOOOOOUUUUUUUUUUUUUUUUUUU################
+#vendas_dia = [("monitor", 900, 2), ("teclado", 150, 5), ("mouse", 80, 10)]
+#for produto, preco_unitario, quantidade in vendas_dia:
+#    print(f"{produto}, total: {preco_unitario * quantidade}")
+
+#dados_filiais = {"matriz" : [10000, 15000, 20000], "filial sul" : [5000, 7000]}
+#
+#def analisar_vendas(vendas):
+#    total = sum(vendas)
+#    media = total / len(vendas)
+#    return total, media
+#
+#for filial in dados_filiais:
+#    vendas_filial = dados_filiais[filial]
+#    total_vendas, media_vendas = analisar_vendas(vendas_filial)
+#    print(f"A filial {filial} teve um total de {total_vendas}, e uma media de {media_vendas}")
+
+#tempos = [15, 45, 10, 120, 30]
+#
+#def resumo_chamados(temp_resp):
+#    quantidade = len(temp_resp)
+#    tempo = max(temp_resp)
+#    return quantidade, tempo
+#
+#quant_chamados, temp_max = resumo_chamados(tempos)
+#print(f"Foram aberto {quant_chamados} chamados, e o tempo maximo de espera foi {temp_max} minutos")
+#print(quant_chamados)
