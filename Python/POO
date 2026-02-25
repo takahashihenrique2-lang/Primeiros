@@ -313,40 +313,80 @@
 #minha_bola.troca_cor("vermelho")
 #minha_bola.mostra_cor()
 
-class Retangulo:
-    def __init__(self, altura, largura):
+#class Retangulo:
+#    def __init__(self, altura, largura):
+#        self.altura = altura
+#        self.largura = largura
+#        self.altura = self.altura.replace("cm", "").replace(".","").replace(",", ".")
+#        self.altura = float(self.altura)
+#        self.largura = self.largura.replace("cm", "").replace(".","").replace(",", ".")
+#        self.largura = float(self.largura)
+#
+#    def MudarValorDosLados(self, nova_altura, nova_largura):
+#        nova_altura = nova_altura.replace("cm", "").replace(".","").replace(",", ".")
+#        nova_altura = float(nova_altura)
+#        nova_largura = nova_largura.replace("cm", "").replace(".","").replace(",", ".")
+#        nova_largura = float(nova_largura)
+#        self.altura = nova_altura
+#        self.largura = nova_largura
+#        print(f"Os novos valores dos lados são: Altura:{self.altura} e Largura:{self.largura}")
+#    
+#    def Retornarvalor(self):
+#        print(f"Os valores dos lados são: Altura:{self.altura} e Largura:{self.largura}")
+#
+#    def CalcularArea(self):
+#        area = self.altura * self.largura
+#        print(f"A área do retângulo é: {area}")
+#
+#    def Calcularperimetro(self):
+#        perimetro = 2 * self.altura + 2 * self.largura
+#        print(f"O perimetro do retângulo é: {perimetro}")
+#
+#meuretangulo = Retangulo("12cm", "20cm")
+#meuretangulo.Retornarvalor()
+#meuretangulo.CalcularArea()
+#meuretangulo.Calcularperimetro()
+#meuretangulo.MudarValorDosLados("20cm", "32cm")
+#meuretangulo.Retornarvalor()
+#meuretangulo.CalcularArea()
+#meuretangulo.Calcularperimetro()
+
+class Pessoa:
+    def __init__(self, nome, idade, peso, altura):
+        self.nome = nome
+        self.idade = idade
+        self.peso = peso
         self.altura = altura
-        self.largura = largura
-        self.altura = self.altura.replace("cm", "").replace(".","").replace(",", ".")
-        self.altura = float(self.altura)
-        self.largura = self.largura.replace("cm", "").replace(".","").replace(",", ".")
-        self.largura = float(self.largura)
-
-    def MudarValorDosLados(self, nova_altura, nova_largura):
-        nova_altura = nova_altura.replace("cm", "").replace(".","").replace(",", ".")
-        nova_altura = float(nova_altura)
-        nova_largura = nova_largura.replace("cm", "").replace(".","").replace(",", ".")
-        nova_largura = float(nova_largura)
-        self.altura = nova_altura
-        self.largura = nova_largura
-        print(f"Os novos valores dos lados são: Altura:{self.altura} e Largura:{self.largura}")
     
-    def Retornarvalor(self):
-        print(f"Os valores dos lados são: Altura:{self.altura} e Largura:{self.largura}")
+    def Envelhecer(self, anos_adicionais):
+        self.anos_adicionais = anos_adicionais
+        self.idade = self.idade + anos_adicionais
+        print(f"A pessoa agora tem {self.idade} anos")
 
-    def CalcularArea(self):
-        area = self.altura * self.largura
-        print(f"A área do retângulo é: {area}")
+    def Engordar(self, peso_adicional):
+        self.peso = self.peso + peso_adicional
+        print(f"O novo peso da pessoa é {self.peso}")
 
-    def Calcularperimetro(self):
-        perimetro = 2 * self.altura + 2 * self.largura
-        print(f"O perimetro do retângulo é: {perimetro}")
+    def Emagrecer(self, peso_perdido):
+        self.peso = self.peso - peso_perdido 
+        print(f"O novo peso da pessoa é {self.peso}")
 
-meuretangulo = Retangulo("12cm", "20cm")
-meuretangulo.Retornarvalor()
-meuretangulo.CalcularArea()
-meuretangulo.Calcularperimetro()
-meuretangulo.MudarValorDosLados("20cm", "32cm")
-meuretangulo.Retornarvalor()
-meuretangulo.CalcularArea()
-meuretangulo.Calcularperimetro()
+    def Crescer(self):
+        if self.idade < 21:
+            self.altura = self.altura + (self.anos_adicionais * 0.05)
+            print(f"A nova altura da pessoa é {self.altura}")
+        else:
+            print("Essa pessoa ja passou de 21 anos, ela não cresce mais")
+    
+    def MostrarInfo(self):
+        print(f"Nome: {self.nome} Idade: {self.idade} Peso: {self.peso} Altura: {self.altura} ")
+
+henrique = Pessoa("Henrique", 16, 56, 1.73)
+henrique.MostrarInfo()
+henrique.Envelhecer(4)
+henrique.Engordar(4)
+henrique.Emagrecer(3)
+henrique.Crescer()
+henrique.MostrarInfo()
+
+
