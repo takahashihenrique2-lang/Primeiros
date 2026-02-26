@@ -1,0 +1,39 @@
+#import random
+#print(random.random())
+#print(random.uniform(4, 10))
+#print(random.randint(22, 55))
+#
+#cores = ["vermelho", "verde", "azul"]
+#print(random.choice(cores))
+#
+#baralho = [1, 2, 3, 4, 5, 6]
+#random.shuffle(baralho)
+#print(baralho)
+
+#opcoes_cara_ou_coroa = ["cara", "coroa"]
+#escolha = random.choice(opcoes_cara_ou_coroa)
+#resposta = input("Digite cara ou coroa:").lower()
+#if resposta == escolha:
+#    print(f"Você acertou, caiu {escolha}")
+#elif resposta != escolha:
+#    print(f"Você errou, caiu {escolha}")
+
+#nomes = ["Diogo", "Fabao", "Henrique", "Lucas", "Ademir"]
+#escolha = random.choice(nomes)
+#print(f"O ganhador do sorteio foi o {escolha}")
+
+#numero = random.randint(1, 100)
+#while True:
+#    resposta = int(input("Digite um numero de 1 a 100 e eu te direi se voce acertou ou não:"))
+#    if resposta != numero:
+#        if resposta > numero:
+#            print("O numero é menor")
+#        elif resposta < numero:
+#            print("O numero é maior")
+#    elif resposta == numero:
+#        print("Parabéns, voce acertou o numero")
+#        break
+#    else:
+#        break
+
+

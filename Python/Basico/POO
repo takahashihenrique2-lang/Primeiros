@@ -351,42 +351,42 @@
 #meuretangulo.CalcularArea()
 #meuretangulo.Calcularperimetro()
 
-class Pessoa:
-    def __init__(self, nome, idade, peso, altura):
-        self.nome = nome
-        self.idade = idade
-        self.peso = peso
-        self.altura = altura
-    
-    def Envelhecer(self, anos_adicionais):
-        self.anos_adicionais = anos_adicionais
-        self.idade = self.idade + anos_adicionais
-        print(f"A pessoa agora tem {self.idade} anos")
-
-    def Engordar(self, peso_adicional):
-        self.peso = self.peso + peso_adicional
-        print(f"O novo peso da pessoa é {self.peso}")
-
-    def Emagrecer(self, peso_perdido):
-        self.peso = self.peso - peso_perdido 
-        print(f"O novo peso da pessoa é {self.peso}")
-
-    def Crescer(self):
-        if self.idade < 21:
-            self.altura = self.altura + (self.anos_adicionais * 0.05)
-            print(f"A nova altura da pessoa é {self.altura}")
-        else:
-            print("Essa pessoa ja passou de 21 anos, ela não cresce mais")
-    
-    def MostrarInfo(self):
-        print(f"Nome: {self.nome} Idade: {self.idade} Peso: {self.peso} Altura: {self.altura} ")
-
-henrique = Pessoa("Henrique", 16, 56, 1.73)
-henrique.MostrarInfo()
-henrique.Envelhecer(4)
-henrique.Engordar(4)
-henrique.Emagrecer(3)
-henrique.Crescer()
-henrique.MostrarInfo()
+#class Pessoa:
+#    def __init__(self, nome, idade, peso, altura):
+#        self.nome = nome
+#        self.idade = idade
+#        self.peso = peso
+#        self.altura = altura
+#    
+#    def Envelhecer(self, anos_adicionais):
+#        self.anos_adicionais = anos_adicionais
+#        self.idade = self.idade + anos_adicionais
+#        print(f"A pessoa agora tem {self.idade} anos")
+#
+#    def Engordar(self, peso_adicional):
+#        self.peso = self.peso + peso_adicional
+#        print(f"O novo peso da pessoa é {self.peso}")
+#
+#    def Emagrecer(self, peso_perdido):
+#        self.peso = self.peso - peso_perdido 
+#        print(f"O novo peso da pessoa é {self.peso}")
+#
+#    def Crescer(self):
+#        if self.idade < 21:
+#            self.altura = self.altura + (self.anos_adicionais * 0.05)
+#            print(f"A nova altura da pessoa é {self.altura}")
+#        else:
+#            print("Essa pessoa ja passou de 21 anos, ela não cresce mais")
+#    
+#    def MostrarInfo(self):
+#        print(f"Nome: {self.nome} Idade: {self.idade} Peso: {self.peso} Altura: {self.altura} ")
+#
+#henrique = Pessoa("Henrique", 16, 56, 1.73)
+#henrique.MostrarInfo()
+#henrique.Envelhecer(4)
+#henrique.Engordar(4)
+#henrique.Emagrecer(3)
+#henrique.Crescer()
+#henrique.MostrarInfo()
 
 

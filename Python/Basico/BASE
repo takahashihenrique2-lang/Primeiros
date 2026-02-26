@@ -951,3 +951,32 @@
 #quant_chamados, temp_max = resumo_chamados(tempos)
 #print(f"Foram aberto {quant_chamados} chamados, e o tempo maximo de espera foi {temp_max} minutos")
 #print(quant_chamados)
+
+lista_produtos = [
+    {"nome" : "caderno", "quantidade" : 12},
+    {"nome" : "estojo", "quantidade" : 20},
+    {"nome" : "mochila", "quantidade" : 6}
+]
+def adicionar():
+    produto = input("Digite o novo produto:")
+    quantidade = input("Digite a quantidade desse produto:")
+    preco = input("Digite o preco desse produto:")
+    novo_produto = {"nome" : produto, "quantidade" : quantidade, "preco" : preco}
+    lista_produtos.append(novo_produto)
+
+def remover():
+    pass
+def listar():
+    
+print("Menu principal: "
+"Digite 1 para adicionar um novo produto e suas informações"
+"Digite 2 para remover um produto do sistema"
+"Digite 3 para mostrar a atual lista de produtos"
+)
+resposta = input("Digite sua escolha:")
+if resposta == "1":
+    adicionar()
+elif resposta =="2":
+    remover()
+elif resposta == "3":
+    listar()
