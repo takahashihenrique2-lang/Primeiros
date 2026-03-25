@@ -1117,3 +1117,23 @@
 #    else:
 #        print("Valor inválido! Por favor, digite um valor válido")
     
+##############FUNCAO OPEN###################
+#nome_arquivo = input("Digite o nome do arquivo que deseja criar:")
+#conteudo = input("Digite o que voce deseja escrever no arquivo:")
+#with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
+#    arquivo.write(conteudo)
+#
+#nova_linha = input("Digite a nova linha que deseja escrever:")
+#with open(nome_arquivo, "a", encoding="utf-8") as arquivo:
+#    arquivo.write("\n" + nova_linha)
+#
+#def contar_vogais():
+#    vogais = "aeiouAEIOU"
+#    contador = 0
+#    with open(nome_arquivo, "r", encoding="utf-8") as arquivo:
+#        for linha in arquivo:
+#            for caracter in linha:
+#                if caracter in vogais:
+#                    contador += 1
+#    return contador
+#print(contar_vogais())
