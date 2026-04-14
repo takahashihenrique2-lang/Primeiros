@@ -1138,4 +1138,39 @@
 #    return contador
 #print(contar_vogais())
 
-teste pelo terminal git
+############Jogodaforca################
+import random
+with open(r"C:\Users\takah\OneDrive\Documentos\MeusProjetos\Primeiros\PYTHON\Basico\Palavras aleatórias.txt", "r", encoding="utf-8") as arquivo:
+    palavras = arquivo.readlines()
+    palavra_secreta = random.choice(palavras).strip().lower()
+    forma_palavra_secreta = ""
+    for letra in palavra_secreta:
+        forma_palavra_secreta += "_"
+
+letras_adivinhadas = []
+tentativas = 6
+tentativas_restantes = tentativas
+
+while tentativas > 0:
+    vontade = input("Digite 1 para continuar jogando ou 2 para tentar adivinhar a palavra secreta:")
+    if vontade == "2":
+        palpite = input("Digite sua tentativa de palavra secreta:").lower()
+        if palpite == palavra_secreta:
+            print("Parabéns! Você acertou a palavra secreta!")
+            break
+        else:
+            print("Palavra incorreta.")
+    else:
+        print(forma_palavra_secreta)
+        tentativa = input("Digite a letra que voce acha que tem a palavra secreta:").lower()
+        if tentativa in palavra_secreta and tentativa not in letras_adivinhadas:
+            letras_adivinhadas.append(tentativa)
+            print("Acertou!")
+            forma_palavra_secreta = forma_palavra_secreta.replace("_", tentativa)
+            print(forma_palavra_secreta)
+        elif tentativa in letras_adivinhadas:
+            print("Você já tentou essa letra, tente outra.")
+        else:
+            tentativas -= 1
+            print(f"Letra incorreta. Você tem {tentativas} tentativas restantes.")
+            print(forma_palavra_secreta)
