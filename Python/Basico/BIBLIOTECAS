@@ -35,3 +35,12 @@
 #        break
 #    else:
 #        break
+ 
+#nomes = {"diogo": 22, "fabao": 25, "henrique": 30, "lucas": 28, "ademir": 35}
+#valor = nomes[]
+#print(valor)
+
+toquio = (35, 54, 43)
+america = (23, 45, 67)
+dicionario = {"toquio": toquio, "america": america}
+print(dicionario["toquio"])
