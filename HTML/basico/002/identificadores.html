@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificadores</title>
+    <style>
+body{
+    background-color: #1fcaa8;
+    font-family: Arial, sans-serif;
+}    
+
+p{
+    text-indent: 20px;
+    text-align: justify;
+    color:black
+}
+
+div{
+    background-color: #e4e9e8;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border: 1px solid #000;
+}
+
+div:hover{
+    background-color: #e7eb06;
+}
+
+#divsecreta{
+    background-color: #e4e9e8;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border: 1px solid #000;
+}
+
+#divsecreta > p{
+    display: none;
+}
+
+#divsecreta:hover > p{
+    display: block;
+    color: red;
+    background-color: #e4e9e8;
+}
+
+h1{ /*box-level, mas se colocar display:inline, ele se torna inline-level*/
+    background-color: #7c7c7c;
+    height: 300px;
+    width: 300px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #00381e;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    outline-width: 20px;
+    outline-style: dashed;
+    outline-color: #7e05c4;
+}
+
+a{ /*inline-level, mas se colocar display:block, ele se torna block-level*/
+    border: 20px solid #f00a0a;
+
+    padding-top: 10px 10px 10px 10px; /*se os 4 lados forem iguais, pode colocar o mesmo valor so uma vez, como no exemplo do margin. Se colocar só dois valores (10px 20px por exemplo, ficariam 10px para cima e para baixo, e 20px para direita e esquerda) pode tambem se colocar 10px auto 10px auto*/
+
+    margin: 10px;
+
+    outline-width: 20px dashed #7e05c4;
+}
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa.</h1>
+    <p>Segundo exemplo de caixa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. blablablalaalsdfaesfjhndsaiuenf a <a href="#">fdasd</a> fasdmbfas dp feo as df oei d eamsnfa pioer dc asidf </p>
+    <div id = "div1">
+            <p>Este é um parágrafo dentro do div.</p>
+        </div>
+        <div id = "div2">
+            <p>Este é um parágrafo dentro do div.</p>
+        </div>
+        <div id = "div3">
+            <p>Este é um parágrafo dentro do div.</p>
+        </div>
+        <div id = "divsecreta">
+            Passe o mouse aqui
+            <p>Este é um parágrafo secreto dentro da div.</p>
+        </div>
+</body>
+</html>
