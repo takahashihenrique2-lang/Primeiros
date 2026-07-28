@@ -1,0 +1,263 @@
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+body{
+
+font-family:Arial, Helvetica, sans-serif;
+
+background:#202020;
+
+color:white;
+
+line-height:1.7;
+
+}
+
+header{
+
+background:#b00000;
+
+padding:20px;
+
+text-align:center;
+
+}
+
+header h1{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin:15px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#ff4d4d;
+
+}
+
+.banner img{
+
+width:100%;
+
+display:block;
+
+}
+
+section{
+
+padding:50px 10%;
+
+}
+
+section h2{
+
+margin-bottom:20px;
+
+font-size:34px;
+
+color:#ff3b3b;
+
+}
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:40px;
+
+flex-wrap:wrap;
+
+}
+
+.card{
+
+background:#2e2e2e;
+
+padding:25px;
+
+width:300px;
+
+border-radius:10px;
+
+text-align:center;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:180px;
+
+margin-bottom:20px;
+
+}
+
+.card h3{
+
+margin-bottom:10px;
+
+color:#ff4444;
+
+}
+
+.botao{
+
+text-align:center;
+
+}
+
+.botao a{
+
+display:inline-block;
+
+margin-top:20px;
+
+background:#c60000;
+
+color:white;
+
+padding:15px 40px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+font-size:20px;
+
+transition:.3s;
+
+}
+
+.botao a:hover{
+
+background:#ff2222;
+
+}
+
+.video{
+
+display:flex;
+
+justify-content:center;
+
+margin-top:30px;
+
+}
+
+.video iframe{
+
+max-width:100%;
+
+border-radius:10px;
+
+}
+
+#fenomeno{
+
+background:#111;
+
+}
+
+#curiosidades ul{
+
+margin-left:30px;
+
+}
+
+#curiosidades li{
+
+margin-bottom:12px;
+
+}
+
+footer{
+
+background:black;
+
+padding:30px;
+
+text-align:center;
+
+color:#ccc;
+
+font-size:14px;
+
+}
+
+/* Estilização do bloco de conteúdo */
+.conteudo-pokemon {
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.conteudo-pokemon h2 {
+  color: #cc0000; /* Vermelho clássico Pokémon */
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.conteudo-pokemon p {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Customização da lista com marcadores de Pokébola */
+.lista-pokebola {
+  list-style: none; /* Remove as bolinhas pretas padrão */
+  padding: 0;
+}
+
+.lista-pokebola li {
+  position: relative;
+  padding-left: 30px; /* Abre espaço para o marcador customizado */
+  margin-bottom: 12px;
+  color: #444;
+}
+
+/* Desenho da Pokébola usando CSS puro antes de cada item */
+.lista-pokebola li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  /* Gradiente para simular a metade vermelha e metade branca da Pokébola */
+  background: linear-gradient(to bottom, #cc0000 50%, #ffffff 50%);
+}
