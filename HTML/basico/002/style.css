@@ -1,0 +1,206 @@
+/* ===========================================================
+   Paleta: cinza (estrutura/texto) + azul (ação/destaque)
+   =========================================================== */
+:root {
+    --azul-600: #2563eb;
+    --azul-700: #1d4ed8;
+    --azul-100: #dbeafe;
+
+    --cinza-50:  #f8fafc;
+    --cinza-100: #f1f5f9;
+    --cinza-200: #e2e8f0;
+    --cinza-400: #94a3b8;
+    --cinza-600: #475569;
+    --cinza-800: #1e293b;
+
+    --raio: 6px;
+    --sombra: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2.5rem 1rem;
+    background-color: var(--cinza-100);
+    color: var(--cinza-800);
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* ---------- Container do formulário ---------- */
+form {
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    padding: 1rem 2rem 2rem;
+}
+
+/* ---------- Fieldsets: separam as seções sem poluir ---------- */
+fieldset {
+    border: none;
+    border-top: 1px solid var(--cinza-200);
+    padding: 1.25rem 0;
+    margin: 0;
+}
+
+fieldset:first-of-type {
+    border-top: none;
+}
+
+legend {
+    padding: 0 0 0.5rem 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--azul-700);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* ---------- Estrutura de cada campo ---------- */
+fieldset > p {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin: 0 0 1rem 0;
+}
+
+fieldset > p:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--cinza-600);
+}
+
+/* ---------- Campos de texto, data, hora, email, tel, select ---------- */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[list],
+select,
+textarea {
+    width: 100%;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid var(--cinza-200);
+    border-radius: var(--raio);
+    background-color: var(--cinza-50);
+    color: var(--cinza-800);
+    font-size: 0.9rem;
+    font-family: inherit;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--azul-600);
+    box-shadow: 0 0 0 3px var(--azul-100);
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* ---------- Radio e checkbox: label ao lado do input ---------- */
+fieldset:has(input[type="radio"]),
+fieldset:has(input[type="checkbox"]) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+fieldset input[type="radio"],
+fieldset input[type="checkbox"] {
+    accent-color: var(--azul-600);
+    margin-right: 0.4rem;
+    vertical-align: middle;
+}
+
+fieldset input[type="radio"] + label,
+fieldset input[type="checkbox"] + label {
+    display: inline;
+    color: var(--cinza-800);
+    font-weight: 400;
+}
+
+/* ---------- Cor, range e arquivo agrupados de forma limpa ---------- */
+input[type="color"] {
+    width: 48px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid var(--cinza-200);
+    border-radius: var(--raio);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+input[type="range"] {
+    accent-color: var(--azul-600);
+    width: 60%;
+    vertical-align: middle;
+}
+
+#ival {
+    font-weight: 600;
+    color: var(--azul-700);
+    margin-left: 0.5rem;
+}
+
+input[type="file"] {
+    display: block;
+    margin-top: 0.35rem;
+    font-size: 0.85rem;
+    color: var(--cinza-600);
+}
+
+/* ---------- Botões ---------- */
+input[type="submit"],
+input[type="reset"] {
+    padding: 0.6rem 1.4rem;
+    border-radius: var(--raio);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+input[type="submit"] {
+    background-color: var(--azul-600);
+    color: #ffffff;
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--azul-700);
+}
+
+input[type="reset"] {
+    background-color: var(--cinza-50);
+    color: var(--cinza-600);
+    border-color: var(--cinza-200);
+}
+
+input[type="reset"]:hover {
+    background-color: var(--cinza-200);
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 480px) {
+    form {
+        padding: 1rem 1.25rem 1.5rem;
+    }
+}
