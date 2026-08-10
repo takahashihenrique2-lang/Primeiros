@@ -1,0 +1,43 @@
+/* Estilos usados somente na impressão */
+@page {
+  margin: 2cm;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: black;
+  background: white;
+}
+
+header {
+  border-bottom: 2px solid black;
+}
+
+nav, footer, .ilustracao {
+  display: none;
+}
+
+main {
+  max-width: none;
+  padding: 0;
+}
+
+.apresentacao {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.projetos {
+  display: block;
+}
+
+article {
+  margin: 12px 0;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #777;
+  box-shadow: none;
+}
+
+h1, h2, h3 {
+  color: black;
+}

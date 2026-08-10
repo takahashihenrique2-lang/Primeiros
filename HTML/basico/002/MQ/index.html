@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries: orientações e impressão</title>
+  <link rel="stylesheet" href="style.css" media="screen">
+  <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+  <header>
+    <h1>Meu portfólio</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre" class="apresentacao">
+      <div>
+        <p class="rotulo">Olá, eu sou</p>
+        <h2>Ana Designer</h2>
+        <p>Este é um exemplo simples de página com layouts diferentes para tela vertical, horizontal e impressão.</p>
+      </div>
+      <div class="ilustracao">AD</div>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos recentes</h2>
+      <div class="projetos">
+        <article><h3>Site de café</h3><p>Layout acolhedor para uma cafeteria local.</p></article>
+        <article><h3>Loja de livros</h3><p>Página de produtos com visual limpo.</p></article>
+        <article><h3>App de tarefas</h3><p>Telas simples para organizar a rotina.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    Contato: ana@email.com
+  </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* Configurações gerais para telas */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+header {
+  padding: 22px 8%;
+  color: white;
+  background: #2563eb;
+}
+
+header h1 {
+  margin: 0 0 12px;
+}
+
+nav a {
+  margin-right: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 35px 8%;
+}
+
+.apresentacao {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 45px;
+}
+
+.apresentacao h2, section > h2 {
+  color: #1d4ed8;
+}
+
+.rotulo {
+  margin-bottom: 0;
+  color: #6b7280;
+}
+
+.ilustracao {
+  display: grid;
+  place-items: center;
+  min-width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+  background: #f97316;
+}
+
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+article {
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 3px 10px #00000018;
+}
+
+article h3 {
+  margin-top: 0;
+}
+
+footer {
+  padding: 20px 8%;
+  text-align: center;
+  color: white;
+  background: #1f2937;
+}
+
+/* Tela em modo retrato: conteúdo empilhado e cores suaves */
+@media screen and (orientation: portrait) {
+  header {
+    text-align: center;
+    background: #7c3aed;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+    text-align: center; 
+  }
+}
