@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="{{ url_for('folha_estilos') }}">
+</head>
+<body>
+  <main class="pagina-login">
+    <form class="login" action="{{ url_for('login') }}" method="post">
+      <h1>Entrar</h1>
+      <p class="boas-vindas">Acesse sua conta para continuar.</p>
+
+      {% if erro %}<p class="erro" role="alert">{{ erro }}</p>{% endif %}
+      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+
+      <label for="usuario">Usuário</label>
+      <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" autocomplete="username" maxlength="50" required>
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha" autocomplete="current-password" maxlength="256" required>
+
+      <button type="submit">Entrar</button>
+      <a href="#" class="esqueci-senha">Esqueci a senha</a>
+    </form>
+  </main>
+</body>
+</html>

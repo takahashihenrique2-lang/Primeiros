@@ -1,0 +1,135 @@
+/* Mobile first: estilos para celulares */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff7ed;
+}
+
+.pagina-login {
+  display: flex;
+  justify-content: center;
+  padding: 45px 20px;
+}
+
+.login {
+  width: 100%;
+  max-width: 360px;
+  padding: 28px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 18px #00000022;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  color: #333;
+}
+
+.boas-vindas {
+  margin: 10px 0 25px;
+  text-align: center;
+  color: #777;
+}
+
+.erro {
+  padding: 10px;
+  border-radius: 6px;
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+label {
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: 2px solid #2563eb;
+  border-color: #2563eb;
+}
+
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #2563eb;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.esqueci-senha {
+  display: block;
+  margin-top: 18px;
+  text-align: center;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* Celulares: até 767px */
+@media screen and (max-width: 767px) {
+  body {
+    background: #fff7ed;
+  }
+}
+
+/* Tablets: de 768px até 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background: #dbeafe;
+  }
+
+  .pagina-login {
+    padding-top: 80px;
+  }
+
+  .login {
+    max-width: 410px;
+    padding: 36px;
+  }
+}
+
+/* Computadores: de 1024px até 1439px */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  body {
+    background: #dcfce7;
+  }
+
+  .pagina-login {
+    padding-top: 100px;
+  }
+}
+
+/* Telas grandes: a partir de 1440px */
+@media screen and (min-width: 1440px) {
+  body {
+    background: #fce7f3;
+  }
+
+  .login {
+    max-width: 440px;
+  }
+}
