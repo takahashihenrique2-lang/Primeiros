@@ -16,6 +16,7 @@
         <div id="esquerda">
             <section id="menu">
                 <nav>
+                    <h1>Menu</h1>
                     <ul>
                         <li><a href="#">Home</a></li><br>
                         <li><a href="#">Sobre</a></li><br>
@@ -30,15 +31,17 @@
             <section id="formulario">
                 <form>
                     <label for="inome">Nome:</label>
-                    <input type="text" id="inome" name="nome"><br><br>
+                    <input type="text" id="inome" name="nome"><br>
                     <label for="iemail">Email:</label>
-                    <input type="email" id="iemail" name="email"><br><br>
+                    <input type="email" id="iemail" name="email"><br>
                     <label for="imensagem">Mensagem:</label><br>
-                    <textarea id="imensagem" name="mensagem"></textarea><br><br>
+                    <textarea id="imensagem" name="mensagem"></textarea><br>
                     <label for="itransação">Nova transação:</label>
-                    <input type="number" id="itransação" name="transação"><br><br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
+                    <input type="number" id="itransação" name="transação"><br>
+                    <div id="botoesfinais">
+                        <input type="submit" value="Enviar" class="botaofinal1">
+                        <input type="reset" value="Limpar" class="botaofinal2">
+                    </div>
                 </form><br>
             </section>
             <section id="tabela">
@@ -48,7 +51,7 @@
                             <th>Nome</th>
                             <th>Email</th>
                             <th>Dia</th>
-                            <th>Valor da Transação</th>
+                            <th>Valor da<br> Transação</th>
                         </tr>
                     </thead>
                     <tbody>
