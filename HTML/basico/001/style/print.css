@@ -150,13 +150,13 @@ form input {
     border: 1px solid transparent;
     border-radius: 8px;
     font-size: 1rem;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 textarea{
     width: 80%;
     padding: 40px 12px;
-    margin-left: 15px;
+    margin-left: 30px;
     border-radius: 8px;
 }
 
@@ -233,12 +233,25 @@ tbody tr:hover {
 }
 
 tfoot {
-    background-color: rgb(8, 3, 39);
+    background-color: rgb(69, 50, 173);
     font-weight: bold;
 }
 
 tfoot td {
     border-top: 2px solid white;
+}
+
+#informacoes{
+    background-color: rgb(68, 228, 5);
+    margin: 0 20px 20px 20px;
+    border-radius: 8px;
+    width: calc(100% - 60px);
+    padding: 20px;
+    background-color: rgb(31, 9, 129);
+}
+
+#informacoes h1{
+    padding-bottom: 10px;
 }
 
 /* Tablet e computador */
