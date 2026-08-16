@@ -22,6 +22,16 @@ header{
     padding:15px;
 }
 
+#esquerda {
+    display: flex;
+    margin-bottom: 10px;;
+}
+
+#menu {
+    display: flex;
+    flex: 1;
+}
+
 nav{
     display: flex;
     flex-direction: column;   /* Empilha os links verticalmente */
@@ -32,15 +42,31 @@ nav{
     background-color: rgb(27, 17, 87);
     width: 28vw;
     max-width:300px ;
-    height: 100vh;
+    height: auto; /* Remova o height: 100vh */
+    flex: 1;
     border-radius: 15px;
     margin: 0 10px;
     padding: 10px;            
     box-sizing: border-box; 
     
 }
+
+#menufixo{
+    position: sticky;
+    top: 15px;
+    z-index: 1;
+    width: 100%;
+    padding: 25px 0 0 0;  /* Mantém 25px no topo e ZERA os lados e o fundo */
+    margin: 0;            /* Zera margens padrão da lista que causam espaços */
+    
+    display: flex;         /* ATIVA o flexbox para o gap funcionar */
+    flex-direction: column;/* Empilha as li verticalmente */
+    gap: 0px;           
+}
+
 nav h1{
     padding-top: 5px;
+    text-align: center;
 }
 
 nav ul{
