@@ -248,6 +248,7 @@ tfoot td {
     width: calc(100% - 60px);
     padding: 20px;
     background-color: rgb(31, 9, 129);
+    overflow-x: auto;
 }
 
 #informacoes h1{
